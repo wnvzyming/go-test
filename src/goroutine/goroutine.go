@@ -5,14 +5,17 @@ import (
 	"time"
 )
 
-func main() {
-	for i := 0; i < 1000; i++ {
+func main()  {
+
+	for i:=0; i<1000 ; i++ {
+
 		go func(i int) {
 			for {
-				fmt.Printf("Hello from "+
-					"goroutine %d\n", i)
+				fmt.Printf("hello goroutine %d\n" , i )
 			}
 		}(i)
+
 	}
-	time.Sleep(time.Minute)
+	time.Sleep(time.Millisecond)
+
 }
