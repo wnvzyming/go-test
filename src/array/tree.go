@@ -1,4 +1,4 @@
-package tree
+package main
 
 import "fmt"
 
@@ -7,22 +7,6 @@ type Node struct {
 	Left, Right *Node
 }
 
-func (node Node) Print() {
-	fmt.Print(node.Value, " ")
-}
-
-func (node *Node) SetValue(value int) {
-	if node == nil {
-		fmt.Println("Setting Value to nil " +
-			"node. Ignored.")
-		return
-	}
-	node.Value = value
-}
-
-func CreateNode(value int) *Node {
-	return &Node{Value: value}
-}
 
 func isSameTree(node1 *Node , node2 *Node) bool {
 
@@ -48,9 +32,9 @@ func main()  {
 	node1.Left = &Node{1,nil,nil}
 	node1.Right = &Node{2,nil,nil}
 
-	node2.Value = 1
+	node2.Value = 2
 	node2.Left = &Node{1,nil,nil}
-	node2.Right = &Node{2,nil,nil}
+	node2.Right = &Node{2,&Node{3,nil,nil},nil}
 
 	fmt.Print(isSameTree(&node1,&node2))
 
