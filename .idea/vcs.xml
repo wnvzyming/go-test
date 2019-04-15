@@ -5,6 +5,9 @@
     <mapping directory="$PROJECT_DIR$/src/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/beego/bee" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/gpmgo/gopm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/kataras/golog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/kataras/iris" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/kataras/pio" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/shiena/ansicolor" vcs="Git" />
   </component>
 </project>
