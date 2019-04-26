@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/astaxie/beego"
 )
 
 func for_arr( arr [3]int)  {
@@ -12,6 +11,19 @@ func for_arr( arr [3]int)  {
 	}
 }
 
+func maxProfit(prices []int) int {
+	n := 0
+	for i:=1; i<len(prices);i++ {
+		if prices[i] > prices[i-1]{
+
+			n += prices[i] - prices[i-1]
+		}
+	}
+
+
+	return n
+
+}
 
 
 func for_arr_zhizhen( arr *[3]int)  {
@@ -22,6 +34,11 @@ func for_arr_zhizhen( arr *[3]int)  {
 }
 
 func main()  {
+
+	r := []int{7,1,5,3,6,4}
+
+	fmt.Print(maxProfit(r))
+
 	//数组是值类型 值类型是拷贝，不会改变原数组的值 引用类型 会改变
 	//arr1 :=  [3]int{1,2,3}
 	//arr2 :=  [3]int{99,98,93}
@@ -41,5 +58,5 @@ func main()  {
 	//	fmt.Println(arr2[i])
 	//}
 
-	beego.Run("127.0.0.1:80891")
+	//beego.Run("127.0.0.1:80891")
 }
