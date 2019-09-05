@@ -23,7 +23,6 @@ func main()  {
 	}
 
 	//i := DetermineEncoding(res.Body)
-
 	//utf8reader := transform.NewReader(res.Body, i.NewDecoder())
 
 	all , err := ioutil.ReadAll(res.Body)

@@ -6,7 +6,6 @@ import (
 	"math/rand"
 )
 
-
 const (
 	//最高层数
 	MAX_LEVEL = 16
@@ -176,4 +175,3 @@ func (sl *SkipList) Delete(v interface{}, score int) int {
 func (sl *SkipList) String() string {
 	return fmt.Sprintf("level:%+v, length:%+v", sl.level, sl.length)
 }
-
